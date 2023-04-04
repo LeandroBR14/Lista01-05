@@ -4,7 +4,7 @@ public class App {
         Scanner teclado = new Scanner(System.in);
 
         System.out.println("Digite uma distância em metros:");
-        double nmetro = 5;//teclado.nextDouble();
+        double nmetro = teclado.nextDouble();
 
         double ncentimetro = nmetro * 100;
 
