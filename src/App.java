@@ -1,12 +1,14 @@
 import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
-        double nmetro;
         Scanner teclado = new Scanner(System.in);
+
         System.out.println("Digite uma distância em metros:");
-        nmetro = teclado.nextDouble();
+        double nmetro = 5;//teclado.nextDouble();
+
         double ncentimetro = nmetro * 100;
-        System.out.print("A distância é: " +ncentimetro);
-        System.out.print(" cm");
+
+        System.out.printf("A distância é: %.2f cm", ncentimetro);
+        teclado.close();
     }
 }
